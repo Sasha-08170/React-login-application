@@ -73,12 +73,6 @@ React-login/
 │   │   ├── LoginPage.jsx       # Страница входа
 │   │   ├── RegisterPage.jsx    # Страница регистрации
 │   │   └── HomePage.jsx        # Главная страница
-│   ├── services/
-│   │   ├── apiService.js       # HTTP сервис с Axios
-│   │   └── authService.js      # Сервис аутентификации
-│   ├── utils/
-│   │   ├── validation.js       # Схемы валидации форм
-│   │   └── errorHandler.js     # Обработка ошибок API
 │   ├── styles/
 │   │   ├── App.module.css      # Глобальные стили
 │   │   ├── LoginPage.module.css
@@ -819,4 +813,5 @@ npm run lint
 3. Зафиксируйте изменения (`git commit -m 'Add amazing feature'`)
 4. Отправьте ветку (`git push origin feature/amazing-feature`)
 5. Откройте Pull Request
+
 
