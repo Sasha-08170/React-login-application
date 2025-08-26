@@ -1,0 +1,37 @@
+/* src/styles/HomePage.module.css */
+
+.container {
+  padding: 40px;
+  text-align: center;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  background-color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+}
+
+.welcomeSection {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: 1rem;
+  color: #000000;
+  text-rendering: optimizeLegibility;
+}
+
+.description {
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-relaxed);
+  letter-spacing: var(--letter-spacing-normal);
+  color: #000000;
+}

@@ -1,0 +1,42 @@
+/* src/styles/App.module.css */
+
+/* Global reset styles */
+:global(*),
+:global(*::before),
+:global(*::after) {
+  box-sizing: border-box;
+}
+
+:global(html),
+:global(body),
+:global(#root) {
+  height: 100%;
+}
+
+:global(body) {
+  margin: 0;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  color: #333333;
+  background-color: #ffffff;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :global(body) {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #1a1a1a;
+  }
+}
+
+.app {
+  height: 100%;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+}

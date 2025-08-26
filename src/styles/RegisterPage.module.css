@@ -1,0 +1,295 @@
+/* src/styles/RegisterPage.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registerBox {
+  background: hsl(0, 0%, 100%);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 400px;
+  max-width: 90vw;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: var(--font-weight-semibold);
+  color: hsl(355, 78%, 56%);
+  margin-bottom: 15px;
+  font-family: var(--font-family-primary);
+  letter-spacing: var(--letter-spacing-tight);
+  text-rendering: optimizeLegibility;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.styledField {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.styledField:focus {
+  border-color: hsl(200, 100%, 50%);
+  outline: none;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  background: hsl(0, 0%, 96%);
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.inputWrapper svg {
+  margin-right: 10px;
+  color: hsl(0, 0%, 33%);
+}
+
+.inputWrapper input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  padding: 10px 0;
+}
+
+.inputWrapper input:focus {
+  outline: none;
+}
+
+.button {
+  background: hsl(200, 100%, 50%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  width: 100%;
+  transition: background-color 0.2s ease;
+  text-rendering: optimizeLegibility;
+}
+
+.button:hover {
+  background: hsl(200, 100%, 40%);
+}
+
+.button:disabled {
+  background: hsl(0, 0%, 80%);
+  cursor: not-allowed;
+}
+
+.errorText {
+  color: hsl(0, 100%, 50%);
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  margin: 5px 0;
+  text-align: center;
+}
+
+.successText {
+  color: hsl(134, 61%, 41%);
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  margin: 5px 0;
+  text-align: center;
+  padding: 10px;
+  background-color: hsl(134, 41%, 88%);
+  border: 1px solid hsl(134, 41%, 83%);
+  border-radius: 6px;
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  color: hsl(0, 0%, 0%);
+  cursor: pointer;
+}
+
+.checkboxWrapper input {
+  margin-right: 8px;
+}
+
+.loginLink {
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+.loginLink a {
+  color: hsl(200, 100%, 50%);
+  text-decoration: none;
+}
+
+.loginLink a:hover {
+  text-decoration: underline;
+}
+
+.registerHeader {
+  margin-bottom: 20px;
+}
+
+.registerForm {
+  width: 100%;
+}
+
+.inputGroup {
+  border: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.checkboxGroup {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.checkboxWrapper input:focus {
+  outline: 2px solid hsl(200, 100%, 50%);
+  outline-offset: 2px;
+}
+
+.button:focus {
+  outline: 2px solid hsl(200, 100%, 40%);
+  outline-offset: 2px;
+}
+
+.registerFooter {
+  margin-top: 20px;
+}
+
+.passwordHelp {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+}
+
+/* Clear button styles */
+.clearButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 5px;
+  color: hsl(0, 0%, 60%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.clearButton:hover {
+  color: hsl(0, 0%, 40%);
+  background-color: hsl(0, 0%, 88%);
+}
+
+.clearButton:focus {
+  outline: 2px solid hsl(200, 100%, 50%);
+  outline-offset: 1px;
+  color: hsl(0, 0%, 20%);
+}
+
+.clearButton svg {
+  font-size: 12px;
+}
+
+/* Password toggle button styles */
+.togglePasswordButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 5px;
+  color: hsl(0, 0%, 40%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.togglePasswordButton:hover {
+  color: hsl(0, 0%, 20%);
+  background-color: hsl(0, 0%, 88%);
+}
+
+.togglePasswordButton:focus {
+  outline: 2px solid hsl(200, 100%, 50%);
+  outline-offset: 1px;
+  color: hsl(0, 0%, 20%);
+}
+
+.togglePasswordButton svg {
+  font-size: 14px;
+}
+
+/* Accessibility helper classes */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
