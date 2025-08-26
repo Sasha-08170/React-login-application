@@ -1,6 +1,6 @@
 # React Login Application 🔐
 
-**Веб-приложение для аутентификации на React с продвинутой архитектурой**
+**Веб-приложение для аутентификации**
 
 ## 🚀 Демонстрация
 
@@ -819,3 +819,4 @@ npm run lint
 3. Зафиксируйте изменения (`git commit -m 'Add amazing feature'`)
 4. Отправьте ветку (`git push origin feature/amazing-feature`)
 5. Откройте Pull Request
+
